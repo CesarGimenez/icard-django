@@ -10,4 +10,4 @@ class TableApiViewSet(ModelViewSet):
     serializer_class = TableSerializer
     queryset = Table.objects.all().order_by('number')
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['waiter']
+    filterset_fields = ['waiter', 'number']
